@@ -5,3 +5,7 @@ target
 tmp
 .history
 dist
+
+#vim shit
+*.swp
+*.swo

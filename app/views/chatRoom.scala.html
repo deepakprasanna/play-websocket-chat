@@ -1,0 +1,7 @@
+@(username: String)(implicit request: RequestHeader)
+
+@main(Some(username)) {
+  <div class="page-header">
+    <h1>Welcome to the chat room <small>you are chatting as @username</small></h1>
+  </div>
+}

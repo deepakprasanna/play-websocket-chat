@@ -26,4 +26,8 @@ object Application extends Controller {
       )
     }
   }
+
+  def chat(username: String) = WebSocket.async[JsValue] { request =>
+    ChatRoom.join(username)
+  }
 }
